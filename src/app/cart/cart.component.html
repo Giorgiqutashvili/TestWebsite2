@@ -1,0 +1,11 @@
+@for (item of cart; track $index) {
+    <div class="card" style="width: 18rem;">
+        <img [src]="item.image[0]" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h1 class="card-title">{{item.name}}</h1>
+          <h3 class="card-text">{{item.price}}</h3>
+          <h3 class="card-text">{{item.spiciness}}</h3>
+          <a href="#" class="btn btn-primary" (click)="deleteItem(item)">Delete</a>
+        </div>
+    </div>
+}

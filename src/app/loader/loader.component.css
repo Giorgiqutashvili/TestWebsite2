@@ -1,0 +1,16 @@
+.fullArea {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 99999999;
+    top: 0;
+    backdrop-filter: blur(10px) brightness(50%);
+}
+
+.spinner-border {
+    color: red;
+    font-size: 20px;
+}
